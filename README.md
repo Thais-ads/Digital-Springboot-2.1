@@ -1,4 +1,8 @@
-#Desenvolvido 
 
-Thais carvalho spinoza RM95546
-Nathalia Silva Lopes RM95962 
+# Projeto Marcas
+
+- Desenvolvido Por :
+
+1. Thais carvalho spinoza RM95546
+
+3. Nathalia Silva Lopes RM95962 
