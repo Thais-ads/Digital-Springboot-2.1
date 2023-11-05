@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head(subtitle)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" th:href="@{~/style.css}">
+    <title th:text="${'Marcas - ' + subtitle}"></title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Marcas</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="/marca">Marcas</a></li>
+                <li><a href="#" >concluídas</a></li>
+                <li><a href="/user" th:text="#{users}">usuários</a></li>
+                <li>
+
+                    <a class='dropdown-trigger' href='#' data-target='dropdown1'>
+                        <img th:src="${avatar_url}" class="avatar" alt="foto do usuário" />
+                    </a>
+
+
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><span th:text="${username}"></span></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li>
+                            <a href="/logout">
+                                <i class="material-icons">logout</i>
+                                sair
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+</body>
+
+</html>
